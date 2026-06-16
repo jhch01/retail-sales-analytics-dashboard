@@ -1,9 +1,11 @@
-# Retail Analytics Dashboard
-Retail analytics project demonstrating SQL queries and Looker Studio dashboard for business insights.
-## Overview
-Few sentences describing the overview of the project
-## Dataset
-Describe what's in the dataset
+# Retail Sales Analytics Dashboard
+## Project Overview
+This project analyzes retail sales performance using SQL (BigQuery) and Tableau. 
+The objective was to identify revenue trends, customer purchasing behavior, and product performance through interactive dashboards.
+## Tools Used
+- SQL (BigQuery)
+- Tableau
+- Github
 ## SQL Queries
 total_sales.sql - Calculates the total montly sales
 top_products.sql - Retrieves the top products
