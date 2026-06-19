@@ -35,5 +35,10 @@ Focus:
 - Product-level analysis identified the categories generating the highest revenue per transaction.
 ## Tableau Dashboard 
 ADD LINK 
-  - Insight 2
-  - Insight 3
+## Skills Demonstrated 
+- SQL
+- Data Modeling
+- Data Cleaning
+- Tableau Dashboard Development
+- Business Intelligence Reporting
+- Data Visualization
