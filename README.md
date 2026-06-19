@@ -14,7 +14,7 @@ The original dataset contained:
 - Products Dimension
 A reporting dataset was created in BigQuery and exported to Tableau for visualization.
 ## Dashboard 1: Executive Overview
-![Executive Overview](Dashboard/Executive Overview Dashboard.png)
+![Executive Overview](Dashboard/Executive%20Overview%20Dashboard.png)
 Focus: 
 - Total Revenue
 - Total Quantity Sold
