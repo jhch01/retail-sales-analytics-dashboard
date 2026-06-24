@@ -19,7 +19,7 @@ SELECT
   SUM(sf.`Total amount`) AS revenue
 FROM `project-5fb8896c-d461-49e8-a4c.retail_project.sales_fact` AS sf
 INNER JOIN `project-5fb8896c-d461-49e8-a4c.retail_project.dates` AS d
-  ON o.Date = d.Date
+  ON sf.Date = d.Date
 GROUP BY d.month_name
 ORDER BY revenue DESC;
 
