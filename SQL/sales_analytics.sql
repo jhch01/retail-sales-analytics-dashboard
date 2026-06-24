@@ -9,7 +9,7 @@
 SELECT 
   SUM(`Total Amount`) AS total_revenue, 
   SUM(`Quantity`) AS total_quantity_sold
-FROM `project-5fb8896c-d461-49e8-a4c.retail_project.orders`;
+FROM `project-5fb8896c-d461-49e8-a4c.retail_project.sales_fact`;
 
 -- ==================================
 -- Revenue by month
@@ -17,7 +17,7 @@ FROM `project-5fb8896c-d461-49e8-a4c.retail_project.orders`;
 SELECT 
   d.month_name, 
   SUM(o.`Total amount`) AS revenue
-FROM `project-5fb8896c-d461-49e8-a4c.retail_project.orders` AS o
+FROM `project-5fb8896c-d461-49e8-a4c.retail_project.sales_fact` AS o
 INNER JOIN `project-5fb8896c-d461-49e8-a4c.retail_project.dates` AS d
   ON o.Date = d.Date
 GROUP BY d.month_name
@@ -36,7 +36,8 @@ SELECT
   `Product Category`, 
   SUM(`Total Amount`) AS revenue
 FROM `project-5fb8896c-d461-49e8-a4c.retail_project.sales_fact`
-GROUP BY `Product Category`;
+GROUP BY `Product Category`
+ORDER BY revenue DESC;
 -- Customer segment analysis: Top customers + revenue contribution
 WITH customer_revenue AS (
   SELECT `Customer ID`, SUM(`Total Amount`) AS total_spent
