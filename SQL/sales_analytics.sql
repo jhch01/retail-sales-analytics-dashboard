@@ -81,7 +81,7 @@ FROM `project-5fb8896c-d461-49e8-a4c.retail_project.sales_fact` AS sf
 INNER JOIN `project-5fb8896c-d461-49e8-a4c.retail_project.customers_dim` AS cd
   ON sf.`Customer ID` = cd.`Customer ID`
 GROUP BY age_group 
-ORDER BY age_group;
+ORDER BY total_revenue DESC;
 
 -- ==================================
 -- Revenue by gender
